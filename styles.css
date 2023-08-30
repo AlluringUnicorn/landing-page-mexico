@@ -64,7 +64,37 @@ header {
   height: 80px;
   font-size: 36px;
   line-height: 150%;
+  overflow: hidden;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.5em;
+    height: 100%;
+    background: #fff;
+    opacity: 0.2;
+    transform: translateX(-4em) skewX(-45deg);
+    animation: light 3s linear infinite;
+  }
 }
+
+@keyframes light {
+  33%,
+  100% {
+    transform: translateX(15em) skewX(-45deg);
+  }
+}
+
+/* @keyframes light {
+  from {
+    transform: translateX(-4em) skewX(-45deg);
+  }
+  to {
+    transform: translateX(15em) skewX(-45deg);
+  }
+} */
 
 .header_link {
   color: #fff;
