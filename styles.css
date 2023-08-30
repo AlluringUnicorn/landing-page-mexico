@@ -96,8 +96,8 @@ header {
   font-weight: 900;
   padding-top: 14px;
   box-sizing: border-box;
-  position: relative;
-  left: 770px;
+  position: sticky;
+  left: 1770px;
   & span {
     text-transform: uppercase;
     font-size: 28px;
